@@ -1,8 +1,11 @@
+import './style.css';
+
 function contactPage() {
-    const content = document.getElementById('content');
     const body = document.body;
-    body.setAttribute("style", "background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/Chipotle_Mexican_Grill_logo.svg/1200px-Chipotle_Mexican_Grill_logo.svg.png'); background-size: 50px;");
-    content.setAttribute("style", "background-image: url('https://wallpaperaccess.com/full/1556622.jpg'); background-repeat: repeat-y; margin: 0 auto; text-align: center; width: 700px;");
+    body.classList.add('body');
+    const content = document.getElementById('content');
+    content.classList.add('container');
+    
     const contactTitle = document.createElement('h1');
     contactTitle.innerText = 'Contact Us';
     const person1Name = document.createElement('h3');
